@@ -18,6 +18,7 @@
 		F3DD109A23A81A2C00B3F93D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD109923A81A2C00B3F93D /* CoreDataStack.swift */; };
 		F3DD109C23A81A4F00B3F93D /* Calories+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD109B23A81A4F00B3F93D /* Calories+Convenience.swift */; };
 		F3DD109E23A81AA000B3F93D /* CaloriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD109D23A81AA000B3F93D /* CaloriesController.swift */; };
+		F3DD10A023A81B9100B3F93D /* CaloriesTrackerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD109F23A81B9100B3F93D /* CaloriesTrackerTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F3DD109923A81A2C00B3F93D /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		F3DD109B23A81A4F00B3F93D /* Calories+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calories+Convenience.swift"; sourceTree = "<group>"; };
 		F3DD109D23A81AA000B3F93D /* CaloriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesController.swift; sourceTree = "<group>"; };
+		F3DD109F23A81B9100B3F93D /* CaloriesTrackerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesTrackerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				F382B8C923A7C70800D7E5E4 /* ViewController.swift */,
+				F3DD109F23A81B9100B3F93D /* CaloriesTrackerTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3DD10A023A81B9100B3F93D /* CaloriesTrackerTableViewController.swift in Sources */,
 				F3DD109A23A81A2C00B3F93D /* CoreDataStack.swift in Sources */,
 				F382B8CA23A7C70800D7E5E4 /* ViewController.swift in Sources */,
 				F382B8C623A7C70800D7E5E4 /* AppDelegate.swift in Sources */,
