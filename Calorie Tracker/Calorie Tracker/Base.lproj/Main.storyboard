@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Calories Tracker Table View Controller-->
+        <!--Calorie Tracker-->
         <scene sceneID="pM3-TR-w6X">
             <objects>
                 <tableViewController id="VaP-qR-V5J" customClass="CaloriesTrackerTableViewController" customModule="Calorie_Tracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,13 +15,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="Ghf-0c-aOy">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="212"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CaloriesCell" textLabel="rSR-V0-br7" detailTextLabel="acT-NA-4p0" style="IBUITableViewCellStyleValue1" id="Mf1-Sx-URa">
-                                <rect key="frame" x="0.0" y="212" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="240" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mf1-Sx-URa" id="Mrr-JT-HQt">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -50,7 +50,7 @@
                             <outlet property="delegate" destination="VaP-qR-V5J" id="otX-A6-OuK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="bY4-Ao-qsv">
+                    <navigationItem key="navigationItem" title="Calorie Tracker" id="bY4-Ao-qsv">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="OZs-Od-xGX">
                             <connections>
                                 <action selector="addCaloriesButton:" destination="VaP-qR-V5J" id="Wju-NL-Fhq"/>

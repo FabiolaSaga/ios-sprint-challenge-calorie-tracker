@@ -21,6 +21,12 @@ class CaloriesTrackerTableViewController: UITableViewController, NSFetchedResult
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(updateChart(notification:)), name: .updateChart, object: nil)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        NotificationCenter.default.post(name: .updateChart, object: self)
     }
 
     lazy var fetchedResultsController: NSFetchedResultsController<Calories> = {
@@ -82,7 +88,8 @@ class CaloriesTrackerTableViewController: UITableViewController, NSFetchedResult
            let calorieChart = Chart(frame: caloriesChart.frame)
            var data: [Double] = []
            for calorie in fetchedResultsController.fetchedObjects! {
-               
+            print(calorie.calories)
+            data.append(Double(calorie.calories!) as! Double)
            }
            let series = ChartSeries(data)
            series.area = true
